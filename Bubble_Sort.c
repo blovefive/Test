@@ -1,5 +1,5 @@
 // 冒泡排序算法
-void Bubble_Sort(uint8 *buff, uint8 num)
+void Bubble_Sort(uint32_t *buff, uint32_t num)
 {
     bool isChange = true;
     uint32_t i=0, j=0;
@@ -13,7 +13,7 @@ void Bubble_Sort(uint8 *buff, uint8 num)
         {
             if(buff[i] > buff[i+1]) // 由小到大
             {
-                uint8 temp = buff[i];
+                uint32_t temp = buff[i];
                 buff[i] = buff[i+1];
                 buff[i+1] = temp;
                 isChange = true;
